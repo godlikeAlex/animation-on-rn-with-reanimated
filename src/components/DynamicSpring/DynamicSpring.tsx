@@ -33,31 +33,40 @@ const styles = StyleSheet.create({
 
 const [frontCard, middleCard, backCard] = cards;
 
-const baseConfig = {
-  damping: 15,
-  mass: 1,
-  stiffness: 150,
-  overshootClamping: false,
-  restSpeedThreshold: 1,
-  restDisplacementThreshold: 1,
-  toValue: new Value(0)
-};
-
 const createConfig = () => ({
-  x: baseConfig,
-  y: baseConfig
+  x: {
+    damping: 15,
+    mass: 1,
+    stiffness: 150,
+    overshootClamping: false,
+    restSpeedThreshold: 1,
+    restDisplacementThreshold: 1,
+    toValue: new Value(0)
+  },
+  y: {
+    damping: 15,
+    mass: 1,
+    stiffness: 150,
+    overshootClamping: false,
+    restSpeedThreshold: 1,
+    restDisplacementThreshold: 1,
+    toValue: new Value(0)
+  }
 });
 
-const baseState = {
-  finished: new Value(0),
-  velocity: new Value(0),
-  position: new Value(0),
-  time: new Value(0)
-};
-
 const createState = () => ({
-  x: baseState,
-  y: baseState
+  x: {
+    finished: new Value(0),
+    velocity: new Value(0),
+    position: new Value(0),
+    time: new Value(0)
+  },
+  y: {
+    finished: new Value(0),
+    velocity: new Value(0),
+    position: new Value(0),
+    time: new Value(0)
+  }
 });
 
 const withSpring = (
