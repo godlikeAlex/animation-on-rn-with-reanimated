@@ -54,6 +54,7 @@ export default () => {
       <ListItem text="🎷 SwipeToDrag" navigateTo="SwipeToDrag" />
       <ListItem text="🐾 PinchGesture First" navigateTo="PinchGesture1" />
       <ListItem text="🐾🥱 PinchGesture Second" navigateTo="PinchGesture2" />
+      <ListItem text="🤩 SVG" navigateTo="Svg" />
       <ListItem text="😎 Education" navigateTo="Education" />
     </ScrollView>
   );

@@ -13,3 +13,4 @@ export {default as DynamicSpring} from './DynamicSpring';
 export {default as SwipeToDrag} from './SwipeToDrag';
 export {PinchGesture1, PinchGesture2} from './PinchGesture';
 export {default as Education} from './Education';
+export {default as Svg} from './Svg';

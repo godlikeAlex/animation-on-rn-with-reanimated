@@ -16,7 +16,8 @@ import {
   SwipeToDrag,
   PinchGesture1,
   PinchGesture2,
-  Education
+  Education,
+  Svg
 } from './components';
 
 const Stack = createStackNavigator();
@@ -40,6 +41,7 @@ export default function Routes() {
         <Stack.Screen name="PinchGesture1" component={PinchGesture1} />
         <Stack.Screen name="PinchGesture2" component={PinchGesture2} />
         <Stack.Screen name="Education" component={Education} />
+        <Stack.Screen name="Svg" component={Svg} />
       </Stack.Navigator>
     </NavigationContainer>
   );
